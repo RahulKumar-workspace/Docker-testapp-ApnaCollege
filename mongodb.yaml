@@ -11,6 +11,10 @@ services:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: qwerty
 
+    volumes:
+    # - host_dir:/data/db
+    - /Users/krahul/documents/study/data:/data/db
+
   mongo-express:
     image: mongo-express
 
